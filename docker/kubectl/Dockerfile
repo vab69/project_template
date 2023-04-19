@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:22.10
 
 RUN apt update && apt install -y unzip curl vim && apt-get clean && rm -rf /var/lib/apt/lists/*
 
