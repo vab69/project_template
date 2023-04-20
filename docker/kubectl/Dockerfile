@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:kinetic
 
 RUN apt update && apt install -y unzip curl vim && apt-get clean && rm -rf /var/lib/apt/lists/*
 
