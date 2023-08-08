@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.18.3
 
 RUN apk add --no-cache rsyslog
 RUN addgroup -g 1043 rsyslog && adduser -u 1043 -G rsyslog -s /bin/sh -D rsyslog
